@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link href="voiture.json">
+  <title>Exercise 2</title>
+</head>
+<body ng-app="testApp">
+  <div ng-controller="carCtrl">
+    <table>
+      <thead>
+        <tr>
+          <th>Marque</th>
+          <th>Couleur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="car in cars">
+          <td>{{car.marque}}</td>
+          <td>{{car.couleur}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
