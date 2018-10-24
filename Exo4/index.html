@@ -15,7 +15,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="car in cars | filter : couleur = 'verte'">
+        <tr ng-repeat="car in cars | filter : {couleur : '!verte'}">
           <td>{{car.marque}}</td>
           <td>{{car.couleur}}</td>
         </tr>
